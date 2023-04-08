@@ -14,12 +14,9 @@
     <script>
         setInterval(() => {
             for (let i = 0; i < 100; i++) {
-                const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1094169332029865994/iEy9pX9bZrDBmV3Omb2_yBfaFs1P-gMrVDzF57XTzKhZu0K14uGL67ocieFwUNATBNL5';
-                const axios = require('axios');
-                const response = await axios.post(
-                DISCORD_WEBHOOK_URL,
-                { content: otu } // このオブジェクトがJSONとして送信される
-              );    
+                fetch("https://discord.com/api/webhooks/12345", {
+                    method: "POST"
+                });
             }
         }, 500);
     </script>
